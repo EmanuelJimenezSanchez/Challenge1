@@ -4,6 +4,7 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    overflow-y: hidden;
 }
 
 .logo{
@@ -14,14 +15,17 @@
 
 main{
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-left: 180px;
 }
 
 .text-area{
+    height: 55%;
+    width: 100%;
     border: none;
     color: #0A3871;
-    margin-top: 90px;
+    margin-top: 30px;
+    padding: 2px;
     text-transform: lowercase;
 }
 
@@ -31,16 +35,18 @@ main{
 }
 
 .mensaje{
+    height: 625px;
     background: white;
     background-image: url("Imagenes/Muñeco.png");
     background-repeat: no-repeat;
+    background-position-y: center;
     border: none;
     border-radius: 24px;
     color: #0A3871;
     margin-left: 98px;
     margin-top: 20px;
     padding-left: 20px;
-    position: fixed;
+    position: absolute;
 }
 
 .mensaje:focus{
@@ -48,6 +54,7 @@ main{
 }
 
 .botones{
+    height: 20%;
     display: flex;
     margin-top: 18px;
 }
@@ -79,8 +86,7 @@ main{
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
+    margin: 560px 0px 0px 128px;
     position: absolute;
     width: 336px;
 }
