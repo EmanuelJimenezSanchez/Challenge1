@@ -44,3 +44,9 @@ function desencriptar(stringDesencriptado){
     }
     return stringDesencriptado
 }
+
+function btnCopiarAlPortapapeles(){
+    const textoCopiado = mensaje.value;
+    navigator.clipboard.writeText(textoCopiado);
+    mensaje.value = "";
+}
