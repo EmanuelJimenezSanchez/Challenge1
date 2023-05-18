@@ -47,6 +47,7 @@ function desencriptar(stringDesencriptado){
 
 function btnCopiarAlPortapapeles(){
     const textoCopiado = mensaje.value;
-    navigator.clipboard.writeText(textoCopiado);
+    navigator.clipboard.writeText(textoCopiado);        
     mensaje.value = "";
+    mensaje.style.backgroundImage = "url('Imagenes/Muñeco.png')";
 }
