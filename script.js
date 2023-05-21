@@ -1,5 +1,7 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
+const mensajeVacio = document.querySelector(".no-mensaje");
+
 
 /* La letra "e" es convertida para "enter"
 La letra "i" es convertida para "imes"
@@ -12,6 +14,7 @@ function btnEncriptar(){
     mensaje.value = textoEncriptado;
     textArea.value = "";
     mensaje.style.backgroundImage = "none";
+    mensajeVacio.style.display = "none";
 }
 
 function encriptar(stringEncriptado){
@@ -31,6 +34,7 @@ function btnDesencriptar(){
     mensaje.value = textoEncriptado;
     textArea.value = "";
     mensaje.style.backgroundImage = "none";
+    mensajeVacio.style.display = "none";
 }
 
 function desencriptar(stringDesencriptado){
@@ -50,4 +54,5 @@ function btnCopiarAlPortapapeles(){
     navigator.clipboard.writeText(textoCopiado);        
     mensaje.value = "";
     mensaje.style.backgroundImage = "url('Imagenes/Muñeco.png')";
+    mensajeVacio.style.display = "block";
 }
