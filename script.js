@@ -1,7 +1,8 @@
-const textArea = document.querySelector(".text-area");
-const mensaje = document.querySelector(".mensaje");
-const mensajeVacio = document.querySelector(".no-mensaje");
+const textArea = document.querySelector(".escribir__text-area");
+const mensaje = document.querySelector(".mensaje__informacion");
+const mensajeVacio = document.querySelector(".noMensaje");
 
+mensaje.style.backgroundImage = "url('Imagenes/Muñeco.png')";
 
 /* La letra "e" es convertida para "enter"
 La letra "i" es convertida para "imes"
@@ -52,7 +53,6 @@ function desencriptar(stringDesencriptado){
 function btnCopiarAlPortapapeles(){
     const textoCopiado = mensaje.value;
     navigator.clipboard.writeText(textoCopiado);        
-    mensaje.value = "";
     mensaje.style.backgroundImage = "url('Imagenes/Muñeco.png')";
     mensajeVacio.style.display = "block";
 }
