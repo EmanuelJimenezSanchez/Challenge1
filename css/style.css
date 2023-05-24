@@ -157,7 +157,7 @@ h3 {
     text-transform: lowercase;
     border: none;
     border-radius: 1rem;
-    background-image: url(".Imagenes/Muñeco.png");
+    background-image: url("./Imagenes/Muñeco.png");
     background-size: 25rem;
     background-repeat: no-repeat;
     background-position-y: 30px;
