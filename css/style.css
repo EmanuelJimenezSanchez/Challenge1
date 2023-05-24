@@ -76,10 +76,23 @@ h3 {
     background-color: var(--primarioOscuro);
     text-align: center;
     margin-top: 4rem;
+    padding: 4rem 0;
+}
+.footer__contenedor {
+    display: block;
+}
+@media (min-width: 480px) {
+    .footer__contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .footer__copyright {
+    margin: 0 4rem 0 0;
+}
+.footer__redesSociales {
     margin: 0;
-    padding: 4rem 0;
 }
 
 /** Seccion para ingresar la informacion **/
@@ -200,4 +213,8 @@ h3 {
     .btn-copiar {
         width: 45%;
     }
+}
+.btn-copiar:hover {
+    transform: scale(1.05);
+    background-color: var(--primarioMasOscuro);
 }
